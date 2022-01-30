@@ -1,0 +1,16 @@
+﻿cmake_minimum_required (VERSION 3.8)
+
+project ("RTSAlloc")
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_C_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS False)
+
+# Include sub-projects.
+add_subdirectory ("RTSAlloc")
